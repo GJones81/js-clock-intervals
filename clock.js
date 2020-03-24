@@ -8,6 +8,7 @@ const rotationPerHour = .0083
 let degreesPerSecond = 0
 let degreesPerMinute = 0
 let degreesPerHour = 0
+let currentSeconds = new Date()
 
 
 const secondsCounter = () => {
@@ -26,6 +27,9 @@ const hoursCounter = () => {
 }
 
 const startClock = () => {
+	//degreesPerSecond = currentSeconds
+	//degreesPerMinute = currentSeconds
+	//degreesPerHour = currentSeconds
 	setInterval(secondsCounter, 1000)
 	setInterval(minutesCounter, 1000)
 	setInterval(hoursCounter, 1000)
